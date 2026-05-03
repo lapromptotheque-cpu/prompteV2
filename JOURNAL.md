@@ -56,3 +56,28 @@ Ce fichier consigne l'avancement quotidien du dÃ©veloppement de La PromptothÃ¨qu
 
 **Notes & DÃ©cisions :**
 - Validation de l'architecture "Monolithe Modulaire" avec base PostgreSQL.
+
+### Date : 2026-05-03
+**Tâches accomplies :**
+- Installation de Next.js (App Router) et création du système de design (CSS Vanilla).
+- Configuration de l'environnement de test (Vitest & Playwright).
+- Liaison de Supabase Cloud et de Vercel avec le dépôt GitHub officiel.
+- Déploiement de la documentation technique et sécurisation des identifiants API (Vercel, Supabase) sur Notion.
+
+**Ce qui reste à faire :**
+- Coder les tables de la base de données Supabase.
+- Construire le Dashboard Next.js (Sidebar, UI).
+
+**Use Cases & User Stories traités :**
+- **Use case** : Cadrage technique & Infrastructure.
+
+**Coût (Tokens / API) :**
+- **API Notion (MCP)** : 3 requêtes (Gratuit).
+
+**Fichiers impactés :**
+- \
+ext.config.mjs\, \package.json\, \.gitignore\, \docs/ARCHITECTURE.md\, \JOURNAL.md\
+
+**Notes & Décisions :**
+- Sauvegarde sécurisée temporaire des clés puis suppression des scripts. Le socle est validé.
+
