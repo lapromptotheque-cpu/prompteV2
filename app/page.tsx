@@ -1,16 +1,25 @@
-export default function Home() {
+import Navbar from '@/app/components/landing/Navbar';
+import Hero from '@/app/components/landing/Hero';
+import FeaturesGrid from '@/app/components/landing/FeaturesGrid';
+import ActionFeaturesSection from '@/app/components/landing/ActionFeaturesSection';
+import IntegrationSection from '@/app/components/landing/IntegrationSection';
+import Testimonial from '@/app/components/landing/Testimonial';
+import CTASection from '@/app/components/landing/CTASection';
+import Footer from '@/app/components/landing/Footer';
+
+export default function HomePage() {
   return (
-    <main className="container center-flex">
-      <div className="glass-card" style={{ textAlign: 'center', maxWidth: '600px' }}>
-        <h1>La Promptothèque</h1>
-        <p style={{ marginBottom: '2rem' }}>
-          L'environnement de test Supabase et l'architecture Next.js modulaire sont configurés. 
-          Prêt à développer l'avenir de l'IA.
-        </p>
-        <button className="btn-primary">
-          Ouvrir le Playground
-        </button>
-      </div>
-    </main>
+    <div className="bg-white min-h-screen font-sans" style={{ fontFamily: 'var(--font-sans)' }}>
+      <Navbar />
+      <main>
+        <Hero />
+        <FeaturesGrid />
+        <ActionFeaturesSection />
+        <IntegrationSection />
+        <Testimonial />
+        <CTASection />
+      </main>
+      <Footer />
+    </div>
   );
 }

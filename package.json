@@ -13,17 +13,25 @@
     "test:e2e": "playwright test",
     "db:test:start": "supabase start",
     "db:test:stop": "supabase stop",
-    "db:test:seed": "node scripts/seed-test-db.js"
+    "db:test:seed": "node scripts/seed-test-db.js",
+    "embed": "node scripts/embed-prompts.js"
   },
   "devDependencies": {
     "@playwright/test": "^1.59.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
     "dotenv": "^17.4.2",
     "pg": "^8.20.0",
+    "typescript": "6.0.3",
     "vitest": "^4.1.5"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.105.1",
+    "@tailwindcss/postcss": "^4.2.4",
+    "lucide-react": "^1.14.0",
     "next": "^16.2.4",
     "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "react-dom": "^19.2.5",
+    "tailwindcss": "^4.2.4"
   }
 }

@@ -1,0 +1,2 @@
+ALTER TABLE public.prompts
+  ADD COLUMN IF NOT EXISTS slug TEXT UNIQUE;
